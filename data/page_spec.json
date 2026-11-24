@@ -1,0 +1,1131 @@
+{
+ "version": 1,
+ "generated_from": "analysis/aggregates.json",
+ "region": "213 (Москва)",
+ "engine": "Яндекс",
+ "levels": {
+  "blocks": "required — у ≥50% эталона; recommended — 20–50%; optional — <20%. Hero и форма на лендинге всегда required.",
+  "elements": "required — у ≥70% эталона или топ-3 выше 7–10 при p<0,05; recommended — ≥40% или разница в пользу топ-3 при p<0,25.",
+  "metrics": "min…max = P25…P75 эталона; для объёма, блоков и CTA min не ниже медианы позиций 7–10; target = медиана."
+ },
+ "choose_template": {
+  "изготовление флагов на заказ Москва": "landing",
+  "флаг с логотипом на заказ": "landing",
+  "изготовление флагов малым тиражом": "landing",
+  "срочная печать флагов в Москве": "landing",
+  "флаг виндер на заказ": "landing",
+  "настольные флажки с логотипом": "landing",
+  "автомобильные флаги на заказ": "landing",
+  "двусторонний уличный флаг": "landing",
+  "сублимационная печать на ткани Москва": "landing",
+  "широкоформатная печать на ткани": "landing",
+  "печать на полиэстере погонными метрами": "landing",
+  "печать на ткани заказчика": "landing",
+  "какая ткань подходит для уличного флага": "article",
+  "флажная сетка или таффета для флага": "landing",
+  "печать на флажном шелке": "landing",
+  "флаги из полиэфирного шелка": "product",
+  "флаг с карманом для древка": "product",
+  "изготовление флагов с люверсами": "landing",
+  "усиление края уличного флага": "landing",
+  "флаг для флагштока с баннерным плечом": "product",
+  "изготовление вымпелов на заказ": "landing",
+  "текстильные баннеры с печатью": "landing",
+  "изготовление штандартов с бахромой": "landing",
+  "требования к макету флага для печати": "article"
+ },
+ "choose_rule": "Класс запроса = доминирующий тип страницы в выдаче Яндекса (топ-3 с весом 2). Для нового запроса: снять выдачу и посчитать так же; при смешанной выдаче — landing с блоком specs как в статье.",
+ "templates": {
+  "landing": {
+   "reference": "топ-3 лендингов (category/home) по запросам класса landing",
+   "n": 41,
+   "blocks": [
+    {
+     "type": "hero",
+     "level": "required",
+     "position": 0.0,
+     "share_reference": 1.0,
+     "share_7_10": 1.0,
+     "word_share": 0.1,
+     "purpose": "H1 с ключом и оффером (тираж, срок), подзаголовок, CTA «Рассчитать / Заказать», контакты рядом"
+    },
+    {
+     "type": "specs",
+     "level": "required",
+     "position": 0.3,
+     "share_reference": 0.66,
+     "share_7_10": 0.49,
+     "word_share": 0.24,
+     "purpose": "Материалы, ткани, технология печати, обработка края, крепления, размеры, требования к макету"
+    },
+    {
+     "type": "prices",
+     "level": "required",
+     "position": 0.33,
+     "share_reference": 0.55,
+     "share_7_10": 0.47,
+     "word_share": 0.25,
+     "purpose": "Таблица цен по размеру × ткани × тиражу или прайс на 5–10 позиций; не в первом экране"
+    },
+    {
+     "type": "steps",
+     "level": "recommended",
+     "position": 0.4,
+     "share_reference": 0.24,
+     "share_7_10": 0.22,
+     "word_share": 0.07,
+     "purpose": "Как заказать: заявка → макет → согласование → производство → доставка"
+    },
+    {
+     "type": "text",
+     "level": "required",
+     "position": 0.43,
+     "share_reference": 0.53,
+     "share_7_10": 0.43,
+     "word_share": 0.16,
+     "purpose": "SEO-текст об услуге: назначение, особенности, отличия вариантов"
+    },
+    {
+     "type": "advantages",
+     "level": "recommended",
+     "position": 0.64,
+     "share_reference": 0.29,
+     "share_7_10": 0.29,
+     "word_share": 0.12,
+     "purpose": "Преимущества: своё производство, сроки, малый тираж, гарантия цвета"
+    },
+    {
+     "type": "catalog",
+     "level": "required",
+     "position": 0.75,
+     "share_reference": 0.58,
+     "share_7_10": 0.53,
+     "word_share": 0.09,
+     "purpose": "Виды и разновидности изделия плитками со ссылками на дочерние страницы"
+    },
+    {
+     "type": "portfolio",
+     "level": "recommended",
+     "position": 0.75,
+     "share_reference": 0.21,
+     "share_7_10": 0.2,
+     "word_share": 0.04,
+     "purpose": "Фото выполненных работ"
+    },
+    {
+     "type": "form",
+     "level": "required",
+     "position": 1.0,
+     "share_reference": 0.32,
+     "share_7_10": 0.29,
+     "word_share": 0.12,
+     "purpose": "Форма заявки или расчёта (имя, телефон, файл макета, комментарий)"
+    },
+    {
+     "type": "timing",
+     "level": "optional",
+     "position": 0.44,
+     "share_reference": 0.16,
+     "share_7_10": 0.08,
+     "word_share": 0.08,
+     "purpose": "Сроки изготовления: стандартно и срочно"
+    },
+    {
+     "type": "related",
+     "level": "optional",
+     "position": 0.82,
+     "share_reference": 0.11,
+     "share_7_10": 0.08,
+     "word_share": 0.06,
+     "purpose": "Перелинковка: похожие изделия, статьи, смежные услуги"
+    },
+    {
+     "type": "calculator",
+     "level": "optional",
+     "position": 0.86,
+     "share_reference": 0.11,
+     "share_7_10": 0.02,
+     "word_share": 0.07,
+     "purpose": "Калькулятор стоимости (размер, ткань, тираж, обработка) с отправкой расчёта"
+    },
+    {
+     "type": "clients",
+     "level": "optional",
+     "position": 0.86,
+     "share_reference": 0.08,
+     "share_7_10": 0.06,
+     "word_share": 0.0,
+     "purpose": "Логотипы клиентов"
+    },
+    {
+     "type": "faq",
+     "level": "optional",
+     "position": 0.88,
+     "share_reference": 0.18,
+     "share_7_10": 0.14,
+     "word_share": 0.1,
+     "purpose": "Частые вопросы (3–7 вопросов) по срокам, тиражу, тканям, макету"
+    },
+    {
+     "type": "reviews",
+     "level": "optional",
+     "position": 0.91,
+     "share_reference": 0.08,
+     "share_7_10": 0.08,
+     "word_share": 0.1,
+     "purpose": "Отзывы клиентов"
+    },
+    {
+     "type": "contacts",
+     "level": "optional",
+     "position": 1.0,
+     "share_reference": 0.03,
+     "share_7_10": 0.02,
+     "word_share": 0.03,
+     "purpose": "Адрес, карта, телефоны, мессенджеры"
+    },
+    {
+     "type": "delivery",
+     "level": "optional",
+     "position": 1.0,
+     "share_reference": 0.03,
+     "share_7_10": 0.1,
+     "word_share": 0.14,
+     "purpose": "Доставка и самовывоз (лучше упоминанием в тексте и в hero, а не отдельной секцией)"
+    }
+   ],
+   "order": [
+    "hero",
+    "specs",
+    "prices",
+    "steps",
+    "text",
+    "advantages",
+    "catalog",
+    "portfolio",
+    "form"
+   ],
+   "metrics": {
+    "content_words": {
+     "min": 1111,
+     "target": 1265,
+     "max": 1904,
+     "n": 41
+    },
+    "prose_words": {
+     "min": 857,
+     "target": 1076,
+     "max": 1695,
+     "n": 41
+    },
+    "blocks": {
+     "min": 5,
+     "target": 7,
+     "max": 10,
+     "n": 41
+    },
+    "content_h2": {
+     "min": 2,
+     "target": 4,
+     "max": 6,
+     "n": 41
+    },
+    "content_h3": {
+     "min": 0,
+     "target": 3,
+     "max": 7,
+     "n": 41
+    },
+    "title_len": {
+     "min": 53,
+     "target": 62,
+     "max": 83,
+     "n": 41
+    },
+    "description_len": {
+     "min": 131,
+     "target": 165,
+     "max": 188,
+     "n": 41
+    },
+    "hero_words": {
+     "min": 51,
+     "target": 121,
+     "max": 207,
+     "n": 41
+    },
+    "cta": {
+     "min": 8,
+     "target": 18,
+     "max": 26,
+     "n": 41
+    }
+   },
+   "elements": {
+    "hero_cta": {
+     "level": "required",
+     "share_reference": 0.93,
+     "label": "CTA в первом экране",
+     "share_7_10": 0.73,
+     "p": 0.022
+    },
+    "messengers": {
+     "level": "required",
+     "share_reference": 0.95,
+     "label": "Мессенджеры",
+     "share_7_10": 0.64,
+     "p": 0.0
+    },
+    "address": {
+     "level": "required",
+     "share_reference": 0.95,
+     "label": "Адрес",
+     "share_7_10": 0.78,
+     "p": 0.017
+    },
+    "phone_in_header": {
+     "level": "required",
+     "share_reference": 0.71,
+     "label": "Телефон в шапке",
+     "share_7_10": 0.56,
+     "p": 0.299
+    },
+    "moscow": {
+     "level": "required",
+     "share_reference": 0.98,
+     "label": "Упоминание Москвы",
+     "share_7_10": 0.85,
+     "p": 0.042
+    },
+    "timing": {
+     "level": "required",
+     "share_reference": 0.83,
+     "label": "Упоминание сроков",
+     "share_7_10": 0.67,
+     "p": 0.402
+    },
+    "delivery": {
+     "level": "recommended",
+     "share_reference": 0.63,
+     "label": "Упоминание доставки",
+     "share_7_10": 0.51,
+     "p": 0.403
+    },
+    "min_order": {
+     "level": "required",
+     "share_reference": 0.34,
+     "label": "«От 1 шт.» / малый тираж",
+     "share_7_10": 0.15,
+     "p": 0.031,
+     "condition": "только если сайт правда берёт заказ от 1 шт.; иначе — минимальный тираж явно"
+    },
+    "payment": {
+     "level": "recommended",
+     "share_reference": 0.44,
+     "label": "Оплата / юрлица",
+     "share_7_10": 0.29,
+     "p": 0.149
+    },
+    "guarantee": {
+     "level": "optional",
+     "share_reference": 0.37,
+     "label": "Гарантия",
+     "share_7_10": 0.35,
+     "p": 0.832
+    },
+    "own_production": {
+     "level": "recommended",
+     "share_reference": 0.41,
+     "label": "Своё производство",
+     "share_7_10": 0.36,
+     "p": 0.679
+    },
+    "content_form": {
+     "level": "recommended",
+     "share_reference": 0.66,
+     "label": "Форма в контенте",
+     "share_7_10": 0.55,
+     "p": 0.332
+    },
+    "price_table": {
+     "level": "optional",
+     "share_reference": 0.24,
+     "label": "Таблица цен",
+     "share_7_10": 0.31,
+     "p": 0.519
+    },
+    "calculator": {
+     "level": "optional",
+     "share_reference": 0.12,
+     "label": "Калькулятор",
+     "share_7_10": 0.09,
+     "p": 0.525
+    },
+    "hero_price": {
+     "level": "optional",
+     "share_reference": 0.12,
+     "label": "Цена в первом экране",
+     "share_7_10": 0.31,
+     "p": 0.35
+    },
+    "canonical_self": {
+     "level": "required",
+     "share_reference": 0.73,
+     "label": "Canonical на себя",
+     "share_7_10": 0.65,
+     "p": 0.534
+    },
+    "og_complete": {
+     "level": "recommended",
+     "share_reference": 0.54,
+     "label": "OG полный",
+     "share_7_10": 0.45,
+     "p": 0.427
+    },
+    "markup_breadcrumbs": {
+     "level": "recommended",
+     "share_reference": 0.46,
+     "label": "Крошки (JSON-LD или microdata)",
+     "share_7_10": 0.51,
+     "p": 1.0
+    },
+    "markup_product": {
+     "level": "optional",
+     "share_reference": 0.29,
+     "label": "Product (JSON-LD или microdata)",
+     "share_7_10": 0.31,
+     "p": 0.385
+    },
+    "jsonld_org": {
+     "level": "optional",
+     "share_reference": 0.27,
+     "label": "JSON-LD Organization",
+     "share_7_10": 0.31,
+     "p": 1.0
+    },
+    "jsonld_faq": {
+     "level": "optional",
+     "share_reference": 0.02,
+     "label": "JSON-LD FAQPage",
+     "share_7_10": 0.09,
+     "p": 0.227
+    },
+    "title_moscow": {
+     "level": "required",
+     "share_reference": 0.56,
+     "label": "«Москва» в title",
+     "share_7_10": 0.31,
+     "p": 0.03
+    },
+    "title_order": {
+     "level": "recommended",
+     "share_reference": 0.44,
+     "label": "«на заказ» в title",
+     "share_7_10": 0.31,
+     "p": 0.41
+    },
+    "description_moscow": {
+     "level": "recommended",
+     "share_reference": 0.51,
+     "label": "«Москва» в description",
+     "share_7_10": 0.35,
+     "p": 0.123
+    }
+   },
+   "meta": {
+    "title": "{Услуга/изделие} на заказ в Москве — {оффер: от 1 шт., от N дней} | {Бренд}",
+    "h1": "{Услуга/изделие} на заказ{ в Москве}{ от 1 штуки}{ от N дней}",
+    "description": "{Изготовим/напечатаем} {изделие} {с логотипом} в Москве: {ткани}, {сроки}, {тираж от 1 шт.}. {Доставка}. {Звоните / пишите в WhatsApp, Telegram}.",
+    "notes": "Ключ запроса целиком в title и H1 (покрытие основ в топ-3: title 0,67, H1 0,5); «Москва» в title у 56% лендингов топ-3 против 40% на 7–10."
+   }
+  },
+  "product": {
+   "reference": "все позиции класса product (в топ-3 слишком мало наблюдений)",
+   "n": 24,
+   "blocks": [
+    {
+     "type": "hero",
+     "level": "required",
+     "position": 0.0,
+     "share_reference": 1.0,
+     "share_7_10": null,
+     "word_share": 0.17,
+     "purpose": "H1 с ключом и оффером (тираж, срок), подзаголовок, CTA «Рассчитать / Заказать», контакты рядом"
+    },
+    {
+     "type": "specs",
+     "level": "recommended",
+     "position": 0.5,
+     "share_reference": 0.42,
+     "share_7_10": null,
+     "word_share": 0.36,
+     "purpose": "Материалы, ткани, технология печати, обработка края, крепления, размеры, требования к макету"
+    },
+    {
+     "type": "catalog",
+     "level": "recommended",
+     "position": 0.5,
+     "share_reference": 0.29,
+     "share_7_10": null,
+     "word_share": 0.07,
+     "purpose": "Виды и разновидности изделия плитками со ссылками на дочерние страницы"
+    },
+    {
+     "type": "text",
+     "level": "recommended",
+     "position": 0.5,
+     "share_reference": 0.29,
+     "share_7_10": null,
+     "word_share": 0.22,
+     "purpose": "SEO-текст об услуге: назначение, особенности, отличия вариантов"
+    },
+    {
+     "type": "advantages",
+     "level": "recommended",
+     "position": 0.56,
+     "share_reference": 0.21,
+     "share_7_10": null,
+     "word_share": 0.16,
+     "purpose": "Преимущества: своё производство, сроки, малый тираж, гарантия цвета"
+    },
+    {
+     "type": "prices",
+     "level": "recommended",
+     "position": 0.75,
+     "share_reference": 0.21,
+     "share_7_10": null,
+     "word_share": 0.42,
+     "purpose": "Таблица цен по размеру × ткани × тиражу или прайс на 5–10 позиций; не в первом экране"
+    },
+    {
+     "type": "form",
+     "level": "recommended",
+     "position": 1.0,
+     "share_reference": 0.21,
+     "share_7_10": null,
+     "word_share": 0.33,
+     "purpose": "Форма заявки или расчёта (имя, телефон, файл макета, комментарий)"
+    },
+    {
+     "type": "delivery",
+     "level": "optional",
+     "position": 0.07,
+     "share_reference": 0.04,
+     "share_7_10": null,
+     "word_share": 0.55,
+     "purpose": "Доставка и самовывоз (лучше упоминанием в тексте и в hero, а не отдельной секцией)"
+    },
+    {
+     "type": "reviews",
+     "level": "optional",
+     "position": 0.14,
+     "share_reference": 0.04,
+     "share_7_10": null,
+     "word_share": 0.01,
+     "purpose": "Отзывы клиентов"
+    },
+    {
+     "type": "related",
+     "level": "optional",
+     "position": 0.5,
+     "share_reference": 0.04,
+     "share_7_10": null,
+     "word_share": 0.47,
+     "purpose": "Перелинковка: похожие изделия, статьи, смежные услуги"
+    },
+    {
+     "type": "portfolio",
+     "level": "optional",
+     "position": 0.6,
+     "share_reference": 0.04,
+     "share_7_10": null,
+     "word_share": 0.14,
+     "purpose": "Фото выполненных работ"
+    },
+    {
+     "type": "steps",
+     "level": "optional",
+     "position": 0.9,
+     "share_reference": 0.12,
+     "share_7_10": null,
+     "word_share": 0.15,
+     "purpose": "Как заказать: заявка → макет → согласование → производство → доставка"
+    },
+    {
+     "type": "faq",
+     "level": "optional",
+     "position": 1.0,
+     "share_reference": 0.17,
+     "share_7_10": null,
+     "word_share": 0.36,
+     "purpose": "Частые вопросы (3–7 вопросов) по срокам, тиражу, тканям, макету"
+    },
+    {
+     "type": "clients",
+     "level": "optional",
+     "position": 1.0,
+     "share_reference": 0.08,
+     "share_7_10": null,
+     "word_share": 0.07,
+     "purpose": "Логотипы клиентов"
+    }
+   ],
+   "order": [
+    "hero",
+    "specs",
+    "catalog",
+    "text",
+    "advantages",
+    "prices",
+    "form"
+   ],
+   "metrics": {
+    "content_words": {
+     "min": 466,
+     "target": 809,
+     "max": 1148,
+     "n": 24
+    },
+    "prose_words": {
+     "min": 410,
+     "target": 750,
+     "max": 972,
+     "n": 24
+    },
+    "blocks": {
+     "min": 2,
+     "target": 3,
+     "max": 5,
+     "n": 24
+    },
+    "content_h2": {
+     "min": 0,
+     "target": 1,
+     "max": 2,
+     "n": 24
+    },
+    "content_h3": {
+     "min": 0,
+     "target": 2,
+     "max": 6,
+     "n": 24
+    },
+    "title_len": {
+     "min": 53,
+     "target": 74,
+     "max": 110,
+     "n": 24
+    },
+    "description_len": {
+     "min": 136,
+     "target": 183,
+     "max": 199,
+     "n": 24
+    },
+    "hero_words": {
+     "min": 23,
+     "target": 86,
+     "max": 274,
+     "n": 24
+    },
+    "cta": {
+     "min": 4,
+     "target": 13,
+     "max": 20,
+     "n": 24
+    }
+   },
+   "elements": {
+    "hero_cta": {
+     "level": "required",
+     "share_reference": 0.75,
+     "label": "CTA в первом экране"
+    },
+    "messengers": {
+     "level": "required",
+     "share_reference": 0.71,
+     "label": "Мессенджеры"
+    },
+    "address": {
+     "level": "required",
+     "share_reference": 0.83,
+     "label": "Адрес"
+    },
+    "phone_in_header": {
+     "level": "recommended",
+     "share_reference": 0.42,
+     "label": "Телефон в шапке"
+    },
+    "moscow": {
+     "level": "required",
+     "share_reference": 0.92,
+     "label": "Упоминание Москвы"
+    },
+    "timing": {
+     "level": "recommended",
+     "share_reference": 0.42,
+     "label": "Упоминание сроков"
+    },
+    "delivery": {
+     "level": "recommended",
+     "share_reference": 0.67,
+     "label": "Упоминание доставки"
+    },
+    "min_order": {
+     "level": "optional",
+     "share_reference": 0.17,
+     "label": "«От 1 шт.» / малый тираж"
+    },
+    "payment": {
+     "level": "optional",
+     "share_reference": 0.33,
+     "label": "Оплата / юрлица"
+    },
+    "guarantee": {
+     "level": "recommended",
+     "share_reference": 0.46,
+     "label": "Гарантия"
+    },
+    "own_production": {
+     "level": "optional",
+     "share_reference": 0.38,
+     "label": "Своё производство"
+    },
+    "content_form": {
+     "level": "recommended",
+     "share_reference": 0.54,
+     "label": "Форма в контенте"
+    },
+    "price_table": {
+     "level": "optional",
+     "share_reference": 0.21,
+     "label": "Таблица цен"
+    },
+    "calculator": {
+     "level": "optional",
+     "share_reference": 0.08,
+     "label": "Калькулятор"
+    },
+    "hero_price": {
+     "level": "recommended",
+     "share_reference": 0.54,
+     "label": "Цена в первом экране"
+    },
+    "canonical_self": {
+     "level": "required",
+     "share_reference": 0.71,
+     "label": "Canonical на себя"
+    },
+    "og_complete": {
+     "level": "required",
+     "share_reference": 0.71,
+     "label": "OG полный"
+    },
+    "markup_breadcrumbs": {
+     "level": "required",
+     "share_reference": 0.71,
+     "label": "Крошки (JSON-LD или microdata)"
+    },
+    "markup_product": {
+     "level": "required",
+     "share_reference": 0.88,
+     "label": "Product (JSON-LD или microdata)"
+    },
+    "jsonld_org": {
+     "level": "optional",
+     "share_reference": 0.25,
+     "label": "JSON-LD Organization"
+    },
+    "jsonld_faq": {
+     "level": "optional",
+     "share_reference": 0.08,
+     "label": "JSON-LD FAQPage"
+    },
+    "title_moscow": {
+     "level": "optional",
+     "share_reference": 0.12,
+     "label": "«Москва» в title"
+    },
+    "title_order": {
+     "level": "optional",
+     "share_reference": 0.08,
+     "label": "«на заказ» в title"
+    },
+    "description_moscow": {
+     "level": "optional",
+     "share_reference": 0.17,
+     "label": "«Москва» в description"
+    }
+   },
+   "meta": {
+    "title": "{Изделие} {размер} см {материал}, {крепление} — купить в Москве, цена | {Бренд}",
+    "h1": "{Изделие} {размер} см {материал}{, крепление}",
+    "description": "{Изделие} {размер} {материал}: {крепление}, {плотность}. Цена {от N ₽}. В наличии и на заказ, доставка по Москве.",
+    "notes": "Title длиннее, чем у лендинга (медиана 74–77): размер, материал, крепление; цена в первом экране у 54%."
+   }
+  },
+  "article": {
+   "reference": "все позиции класса article (в топ-3 слишком мало наблюдений)",
+   "n": 22,
+   "blocks": [
+    {
+     "type": "hero",
+     "level": "required",
+     "position": 0.0,
+     "share_reference": 1.0,
+     "share_7_10": null,
+     "word_share": 0.11,
+     "purpose": "H1 с ключом и оффером (тираж, срок), подзаголовок, CTA «Рассчитать / Заказать», контакты рядом"
+    },
+    {
+     "type": "text",
+     "level": "required",
+     "position": 0.17,
+     "share_reference": 0.59,
+     "share_7_10": null,
+     "word_share": 0.42,
+     "purpose": "SEO-текст об услуге: назначение, особенности, отличия вариантов"
+    },
+    {
+     "type": "specs",
+     "level": "required",
+     "position": 0.25,
+     "share_reference": 0.55,
+     "share_7_10": null,
+     "word_share": 0.33,
+     "purpose": "Материалы, ткани, технология печати, обработка края, крепления, размеры, требования к макету"
+    },
+    {
+     "type": "catalog",
+     "level": "recommended",
+     "position": 0.44,
+     "share_reference": 0.36,
+     "share_7_10": null,
+     "word_share": 0.14,
+     "purpose": "Виды и разновидности изделия плитками со ссылками на дочерние страницы"
+    },
+    {
+     "type": "advantages",
+     "level": "recommended",
+     "position": 0.83,
+     "share_reference": 0.27,
+     "share_7_10": null,
+     "word_share": 0.09,
+     "purpose": "Преимущества: своё производство, сроки, малый тираж, гарантия цвета"
+    },
+    {
+     "type": "faq",
+     "level": "recommended",
+     "position": 0.85,
+     "share_reference": 0.27,
+     "share_7_10": null,
+     "word_share": 0.17,
+     "purpose": "Частые вопросы (3–7 вопросов) по срокам, тиражу, тканям, макету"
+    },
+    {
+     "type": "form",
+     "level": "recommended",
+     "position": 1.0,
+     "share_reference": 0.41,
+     "share_7_10": null,
+     "word_share": 0.09,
+     "purpose": "Форма заявки или расчёта (имя, телефон, файл макета, комментарий)"
+    },
+    {
+     "type": "prices",
+     "level": "optional",
+     "position": 0.46,
+     "share_reference": 0.05,
+     "share_7_10": null,
+     "word_share": 0.12,
+     "purpose": "Таблица цен по размеру × ткани × тиражу или прайс на 5–10 позиций; не в первом экране"
+    },
+    {
+     "type": "portfolio",
+     "level": "optional",
+     "position": 0.54,
+     "share_reference": 0.05,
+     "share_7_10": null,
+     "word_share": 0.09,
+     "purpose": "Фото выполненных работ"
+    },
+    {
+     "type": "timing",
+     "level": "optional",
+     "position": 0.65,
+     "share_reference": 0.09,
+     "share_7_10": null,
+     "word_share": 0.06,
+     "purpose": "Сроки изготовления: стандартно и срочно"
+    },
+    {
+     "type": "related",
+     "level": "optional",
+     "position": 0.86,
+     "share_reference": 0.14,
+     "share_7_10": null,
+     "word_share": 0.08,
+     "purpose": "Перелинковка: похожие изделия, статьи, смежные услуги"
+    },
+    {
+     "type": "steps",
+     "level": "optional",
+     "position": 0.89,
+     "share_reference": 0.05,
+     "share_7_10": null,
+     "word_share": 0.09,
+     "purpose": "Как заказать: заявка → макет → согласование → производство → доставка"
+    }
+   ],
+   "order": [
+    "hero",
+    "text",
+    "specs",
+    "catalog",
+    "advantages",
+    "faq",
+    "form"
+   ],
+   "metrics": {
+    "content_words": {
+     "min": 498,
+     "target": 750,
+     "max": 1396,
+     "n": 22
+    },
+    "prose_words": {
+     "min": 457,
+     "target": 656,
+     "max": 1285,
+     "n": 22
+    },
+    "blocks": {
+     "min": 2,
+     "target": 7,
+     "max": 11,
+     "n": 22
+    },
+    "content_h2": {
+     "min": 0,
+     "target": 6,
+     "max": 10,
+     "n": 22
+    },
+    "content_h3": {
+     "min": 0,
+     "target": 2,
+     "max": 6,
+     "n": 22
+    },
+    "title_len": {
+     "min": 33,
+     "target": 53,
+     "max": 69,
+     "n": 22
+    },
+    "description_len": {
+     "min": 34,
+     "target": 120,
+     "max": 151,
+     "n": 22
+    },
+    "hero_words": {
+     "min": 38,
+     "target": 78,
+     "max": 234,
+     "n": 22
+    },
+    "cta": {
+     "min": 2,
+     "target": 8,
+     "max": 16,
+     "n": 22
+    }
+   },
+   "elements": {
+    "hero_cta": {
+     "level": "optional",
+     "share_reference": 0.32,
+     "label": "CTA в первом экране"
+    },
+    "messengers": {
+     "level": "required",
+     "share_reference": 0.82,
+     "label": "Мессенджеры"
+    },
+    "address": {
+     "level": "required",
+     "share_reference": 0.91,
+     "label": "Адрес"
+    },
+    "phone_in_header": {
+     "level": "recommended",
+     "share_reference": 0.59,
+     "label": "Телефон в шапке"
+    },
+    "moscow": {
+     "level": "recommended",
+     "share_reference": 0.64,
+     "label": "Упоминание Москвы"
+    },
+    "timing": {
+     "level": "recommended",
+     "share_reference": 0.68,
+     "label": "Упоминание сроков"
+    },
+    "delivery": {
+     "level": "optional",
+     "share_reference": 0.23,
+     "label": "Упоминание доставки"
+    },
+    "min_order": {
+     "level": "optional",
+     "share_reference": 0.05,
+     "label": "«От 1 шт.» / малый тираж"
+    },
+    "payment": {
+     "level": "optional",
+     "share_reference": 0.09,
+     "label": "Оплата / юрлица"
+    },
+    "guarantee": {
+     "level": "optional",
+     "share_reference": 0.23,
+     "label": "Гарантия"
+    },
+    "own_production": {
+     "level": "optional",
+     "share_reference": 0.23,
+     "label": "Своё производство"
+    },
+    "content_form": {
+     "level": "recommended",
+     "share_reference": 0.45,
+     "label": "Форма в контенте"
+    },
+    "price_table": {
+     "level": "optional",
+     "share_reference": 0.09,
+     "label": "Таблица цен"
+    },
+    "calculator": {
+     "level": "optional",
+     "share_reference": 0.0,
+     "label": "Калькулятор"
+    },
+    "hero_price": {
+     "level": "optional",
+     "share_reference": 0.09,
+     "label": "Цена в первом экране"
+    },
+    "canonical_self": {
+     "level": "required",
+     "share_reference": 0.73,
+     "label": "Canonical на себя"
+    },
+    "og_complete": {
+     "level": "recommended",
+     "share_reference": 0.55,
+     "label": "OG полный"
+    },
+    "markup_breadcrumbs": {
+     "level": "recommended",
+     "share_reference": 0.59,
+     "label": "Крошки (JSON-LD или microdata)"
+    },
+    "markup_product": {
+     "level": "optional",
+     "share_reference": 0.09,
+     "label": "Product (JSON-LD или microdata)"
+    },
+    "jsonld_org": {
+     "level": "recommended",
+     "share_reference": 0.41,
+     "label": "JSON-LD Organization"
+    },
+    "jsonld_faq": {
+     "level": "optional",
+     "share_reference": 0.05,
+     "label": "JSON-LD FAQPage"
+    },
+    "title_moscow": {
+     "level": "optional",
+     "share_reference": 0.0,
+     "label": "«Москва» в title"
+    },
+    "title_order": {
+     "level": "optional",
+     "share_reference": 0.0,
+     "label": "«на заказ» в title"
+    },
+    "description_moscow": {
+     "level": "optional",
+     "share_reference": 0.05,
+     "label": "«Москва» в description"
+    }
+   },
+   "meta": {
+    "title": "{Вопрос запроса}: {что сравниваем / какие требования} — {Бренд}",
+    "h1": "{Вопрос запроса}",
+    "description": "Разбираем {тему}: {перечень вариантов}. Как выбрать под {условия}, и что учесть при заказе.",
+    "notes": "Москва в title не нужна; CTA в первом экране необязателен (32%); в конце — форма «Задать вопрос» и ссылки на лендинги."
+   }
+  }
+ },
+ "theme_volume": {
+  "Виды": {
+   "content_words": {
+    "p25": 719.0,
+    "median": 942.0,
+    "p75": 1431.0,
+    "n": 37
+   },
+   "n": 37
+  },
+  "Заказ": {
+   "content_words": {
+    "p25": 1198.0,
+    "median": 1715.0,
+    "p75": 2374.0,
+    "n": 33
+   },
+   "n": 33
+  },
+  "Материалы": {
+   "content_words": {
+    "p25": 523.0,
+    "median": 968.0,
+    "p75": 1715.0,
+    "n": 35
+   },
+   "n": 35
+  },
+  "Обработка": {
+   "content_words": {
+    "p25": 461.0,
+    "median": 883.0,
+    "p75": 1396.0,
+    "n": 35
+   },
+   "n": 35
+  },
+  "Печать": {
+   "content_words": {
+    "p25": 576.0,
+    "median": 1086.0,
+    "p75": 1240.0,
+    "n": 32
+   },
+   "n": 32
+  },
+  "Смежные услуги": {
+   "content_words": {
+    "p25": 600.0,
+    "median": 1141.0,
+    "p75": 2164.0,
+    "n": 34
+   },
+   "n": 34
+  }
+ }
+}
